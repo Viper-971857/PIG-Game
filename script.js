@@ -6,8 +6,8 @@ const playerElement1 = document.querySelector('.player--1');
 let scoreElement0 = document.querySelector('#score--0');
 let scoreElement1 = document.getElementById('score--1');
 
-const currentScoreElement0 = document.getElementById('current--0');
-const currentScoreElement1 = document.querySelector('current--1');
+let currentScoreElement0 = document.getElementById('current--0');
+let currentScoreElement1 = document.getElementById('current--1');
 
 const diceElement = document.querySelector('.dice');
 
@@ -33,7 +33,7 @@ const init = function () {
   diceElement.classList.add('hidden');
 
   currentScoreElement0.textContent = 0;
-  // currentScoreElement1.textContent = 0;
+  currentScoreElement1.textContent = 0;
 
   playerElement0.classList.remove('player--winner');
   playerElement1.classList.remove('player--winner');
